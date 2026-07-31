@@ -304,3 +304,95 @@ select:focus {
     background: var(--secondary-color);
 
 }
+
+/*
+=========================================
+Trust Bar
+=========================================
+*/
+
+.trust-bar{
+
+padding:70px 0;
+
+background:#ffffff;
+
+}
+
+.trust-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+}
+
+.trust-card{
+
+background:#fff;
+
+border-radius:16px;
+
+padding:35px 25px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+transition:.35s ease;
+
+border:1px solid rgba(0,0,0,.05);
+
+}
+
+.trust-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.trust-icon{
+
+width:72px;
+
+height:72px;
+
+margin:auto;
+
+margin-bottom:20px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+font-size:30px;
+
+background:rgba(10,95,255,.08);
+
+}
+
+.trust-card h3{
+
+margin-bottom:12px;
+
+font-size:22px;
+
+}
+
+.trust-card p{
+
+font-size:15px;
+
+line-height:1.7;
+
+color:var(--text-light);
+
+}

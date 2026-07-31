@@ -274,3 +274,33 @@ max-width:100%;
 }
 
 }
+
+/* =====================================
+Trust Bar
+===================================== */
+
+@media screen and (max-width:991px){
+
+.trust-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media screen and (max-width:576px){
+
+.trust-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.trust-card{
+
+padding:30px 20px;
+
+}
+
+}
