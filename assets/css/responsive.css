@@ -394,3 +394,27 @@ font-size:32px;
 }
 
 }
+
+/* Dealer */
+
+@media(max-width:768px){
+
+.dealer-content h2{
+
+font-size:36px;
+
+}
+
+.dealer-features{
+
+grid-template-columns:1fr;
+
+}
+
+.dealer-content p{
+
+font-size:16px;
+
+}
+
+}

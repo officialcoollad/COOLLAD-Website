@@ -994,3 +994,111 @@ About Company
     color:#fff;
 
 }
+
+/*
+=================================
+Dealer Section
+=================================
+*/
+
+.dealer-section{
+
+background:url("../images/dealer/dealer-bg.png");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+margin-top: -80px;
+
+}
+
+.dealer-overlay{
+
+background:rgba(0, 3, 8, 0.959);
+
+padding:15px 0;
+
+}
+
+.dealer-content{
+
+max-width:750px;
+
+margin:auto;
+
+text-align:center;
+
+color:#f4efef;
+
+}
+
+.dealer-content h2{
+
+font-size:48px;
+
+margin:15px 0;
+
+line-height:1.2;
+
+}
+
+.dealer-content p{
+
+font-size:18px;
+
+line-height:1.9;
+
+opacity:.92;
+
+margin-bottom:40px;
+
+}
+
+.dealer-features{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+margin-bottom:45px;
+
+font-size:18px;
+
+font-weight:500;
+
+}
+
+.dealer-features div{
+
+background:rgba(255,255,255,.08);
+
+padding:18px;
+
+border-radius:10px;
+
+backdrop-filter:blur(8px);
+
+transition:.35s;
+
+}
+
+.dealer-features div:hover{
+
+background:rgba(255,255,255,.15);
+
+transform:translateY(-5px);
+
+}
+
+.dealer-content .btn{
+
+padding:18px 42px;
+
+font-size:18px;
+
+}
