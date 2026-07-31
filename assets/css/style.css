@@ -37,7 +37,11 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
+body.menu-open{
 
+overflow:hidden;
+
+}
 /* =====================================
    Images
 ===================================== */

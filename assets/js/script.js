@@ -1,12 +1,29 @@
-/*
-=========================================
-COOLLAD Website
-Main JavaScript
-=========================================
-*/
+const menuBtn = document.getElementById("menu-toggle");
 
-document.addEventListener("DOMContentLoaded", () => {
+const navbar = document.getElementById("navbar");
 
-    console.log("COOLLAD Website Loaded");
+const overlay = document.getElementById("menu-overlay");
+
+menuBtn.addEventListener("click", () => {
+
+    menuBtn.classList.toggle("active");
+
+    navbar.classList.toggle("active");
+
+    overlay.classList.toggle("active");
+
+    document.body.classList.toggle("menu-open");
+
+});
+
+overlay.addEventListener("click", () => {
+
+    menuBtn.classList.remove("active");
+
+    navbar.classList.remove("active");
+
+    overlay.classList.remove("active");
+
+    document.body.classList.remove("menu-open");
 
 });
