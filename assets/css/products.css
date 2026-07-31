@@ -1,0 +1,774 @@
+/*
+=========================================
+COOLLAD PREMIUM PRODUCTS
+PART 2A-1
+=========================================
+*/
+
+.featured-products{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:160px 0;
+
+    background:linear-gradient(180deg,#f7fbff 0%,#ffffff 100%);
+
+}
+
+.featured-products::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:900px;
+
+    height:900px;
+
+    top:-300px;
+
+    left:-300px;
+
+    border-radius:50%;
+
+    background:radial-gradient(circle,
+    rgba(10,95,255,.08),
+    transparent 72%);
+
+    z-index:0;
+
+}
+
+.featured-products .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/*========================
+SECTION TITLE
+========================*/
+
+.section-heading{
+
+    max-width:820px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+.section-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:10px 24px;
+
+    background:#eaf3ff;
+
+    color:#0A5FFF;
+
+    border-radius:40px;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    margin-bottom:22px;
+
+}
+
+.section-heading h2{
+
+    font-size:58px;
+
+    line-height:1.15;
+
+    font-weight:800;
+
+    color:#08142f;
+
+    margin-bottom:22px;
+
+}
+
+.section-heading p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    font-size:19px;
+
+    line-height:1.8;
+
+    color:#667488;
+
+}
+
+/*========================
+CATEGORY TABS
+========================*/
+
+.product-tabs{
+
+    width:100%;
+
+    max-width:980px;
+
+    margin:0 auto 70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:10px;
+
+    padding:10px;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.product-tabs button{
+
+    flex:1;
+
+    height:60px;
+
+    border:none;
+
+    background:transparent;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#39465d;
+
+    transition:.35s ease;
+
+}
+
+.product-tabs button:hover{
+
+    background:#edf5ff;
+
+    color:#0A5FFF;
+
+}
+
+.product-tabs button.active{
+
+    background:#0A5FFF;
+
+    color:#ffffff;
+
+    box-shadow:0 12px 30px rgba(10,95,255,.28);
+
+}
+
+/*=========================================
+PART 2A-2
+PRODUCT CARDS
+=========================================*/
+
+.product-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    align-items:stretch;
+
+}
+
+.product-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    background:#ffffff;
+
+    border-radius:28px;
+
+    transition:.40s ease;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.07);
+
+    border:1px solid rgba(10,95,255,.05);
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,.12);
+
+}
+
+/*=========================
+TOP CONTENT
+=========================*/
+
+.product-top{
+
+    padding:34px 34px 15px;
+
+}
+
+.product-icon{
+
+    width:68px;
+
+    height:68px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#edf5ff;
+
+    font-size:28px;
+
+    margin-bottom:22px;
+
+}
+
+.product-top h3{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#08142f;
+
+    margin-bottom:16px;
+
+}
+
+.product-top p{
+
+    color:#6d7787;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+/*=========================
+IMAGE
+=========================*/
+
+.product-image{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:290px;
+
+    overflow:hidden;
+
+}
+
+.product-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(circle,
+
+    rgba(10,95,255,.12),
+
+    transparent 72%);
+
+}
+
+.product-image img{
+
+    position:relative;
+
+    z-index:2;
+
+    max-height:250px;
+
+    width:auto;
+
+    transition:.45s ease;
+
+    filter:
+
+    drop-shadow(0 22px 30px rgba(0,0,0,.18));
+
+}
+
+.product-card:hover .product-image img{
+
+    transform:scale(0.75);
+
+}
+
+/*=========================
+BOTTOM
+=========================*/
+
+.product-bottom{
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
+.product-capacity{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#08142f;
+
+    margin-bottom:24px;
+
+}
+
+.product-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:56px;
+
+    border-radius:14px;
+
+    border:2px solid #0A5FFF;
+
+    color:#0A5FFF;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.product-btn:hover{
+
+    background:#0A5FFF;
+
+    color:#ffffff;
+
+}
+
+/*=========================
+HOVER GLOW
+=========================*/
+
+.product-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:#0A5FFF;
+
+    transform:scaleX(0);
+
+    transition:.35s;
+
+    transform-origin:center;
+
+}
+
+.product-card:hover::after{
+
+    transform:scaleX(1);
+
+}
+
+/*=========================================
+PART 2B
+BOTTOM FEATURES + RESPONSIVE
+=========================================*/
+
+/*=========================
+BOTTOM FEATURES
+=========================*/
+
+.product-features{
+
+    margin-top:80px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.feature-item{
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    padding:30px;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    transition:.35s;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.06);
+
+    border:1px solid rgba(10,95,255,.06);
+
+}
+
+.feature-item:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.10);
+
+}
+
+.feature-icon{
+
+    min-width:62px;
+
+    width:62px;
+
+    height:62px;
+
+    border-radius:50%;
+
+    background:#EDF5FF;
+
+    color:#0A5FFF;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+}
+
+.feature-item h4{
+
+    font-size:20px;
+
+    margin-bottom:8px;
+
+    color:#08142F;
+
+}
+
+.feature-item p{
+
+    font-size:15px;
+
+    color:#6d7787;
+
+    line-height:1.7;
+
+}
+
+/*=========================
+IMAGE FIX
+=========================*/
+
+.product-image img{
+
+    max-width:100%;
+
+    object-fit:contain;
+
+}
+
+/*=========================
+SMOOTH ANIMATION
+=========================*/
+
+.product-card,
+.feature-item,
+.product-btn{
+
+    transition:.35s ease;
+
+}
+
+/*=========================
+TABLET
+=========================*/
+
+@media (max-width:1200px){
+
+.product-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.product-features{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.section-heading h2{
+
+font-size:48px;
+
+}
+
+}
+
+/*=========================
+MOBILE
+=========================*/
+
+@media (max-width:768px){
+
+.featured-products{
+
+padding:90px 0;
+
+}
+
+.section-heading{
+
+margin-bottom:45px;
+
+}
+
+.section-heading h2{
+
+font-size:36px;
+
+line-height:1.25;
+
+}
+
+.section-heading p{
+
+font-size:16px;
+
+}
+
+.product-tabs{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:12px;
+
+padding:12px;
+
+}
+
+.product-tabs button{
+
+height:52px;
+
+font-size:15px;
+
+}
+
+.product-grid{
+
+grid-template-columns:1fr;
+
+gap:25px;
+
+}
+
+.product-card{
+
+border-radius:2px;
+
+}
+
+.product-top{
+
+padding:28px;
+
+}
+
+.product-top h3{
+
+font-size:24px;
+
+}
+
+.product-image{
+
+height:250px;
+
+}
+
+.product-image img{
+
+max-height:210px;
+
+}
+
+.product-bottom{
+
+padding:25px;
+
+}
+
+.product-capacity{
+
+font-size:20px;
+
+}
+
+.product-btn{
+
+height:52px;
+
+font-size:16px;
+
+}
+
+.product-features{
+
+grid-template-columns:1fr;
+
+margin-top:55px;
+
+gap:20px;
+
+}
+
+.feature-item{
+
+padding:24px;
+
+}
+
+}
+
+/*=========================
+SMALL MOBILE
+=========================*/
+
+@media (max-width:480px){
+
+.section-heading h2{
+
+font-size:30px;
+
+}
+
+.product-tabs{
+
+grid-template-columns:1fr;
+
+}
+
+.product-tabs button{
+
+width:100%;
+
+}
+
+.product-image{
+
+height:220px;
+
+}
+
+.product-image img{
+
+max-height:180px;
+
+}
+
+}
+.product-card{
+
+transition:
+opacity .35s,
+transform .35s,
+box-shadow .35s;
+
+}
