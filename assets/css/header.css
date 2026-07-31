@@ -1,6 +1,6 @@
 /*
 =========================================
-Header
+COOLLAD Header
 =========================================
 */
 
@@ -9,11 +9,8 @@ Header
 .announcement-bar {
 
     background: var(--secondary-color);
-
     color: var(--text-white);
-
     padding: 10px 0;
-
     font-size: var(--font-sm);
 
 }
@@ -21,22 +18,21 @@ Header
 .announcement-bar p {
 
     margin: 0;
-
     text-align: center;
+    color: var(--white);
 
 }
-
-
 
 /* Header */
 
 .main-header {
 
-    background: var(--white);
-
     position: sticky;
-
     top: 0;
+
+    width: 100%;
+
+    background: var(--white);
 
     z-index: var(--z-header);
 
@@ -44,9 +40,7 @@ Header
 
 }
 
-
-
-/* Wrapper */
+/* Layout */
 
 .header-wrapper {
 
@@ -56,11 +50,9 @@ Header
 
     justify-content: space-between;
 
-    min-height: 85px;
+    min-height: 90px;
 
 }
-
-
 
 /* Logo */
 
@@ -70,19 +62,19 @@ Header
 
 }
 
-
-
 /* Navigation */
 
-.navbar ul {
+.nav-menu {
 
     display: flex;
 
-    gap: 35px;
+    gap: 34px;
 
 }
 
-.navbar a {
+.nav-menu a {
+
+    position: relative;
 
     color: var(--text-dark);
 
@@ -92,8 +84,99 @@ Header
 
 }
 
-.navbar a:hover {
+/* Hover */
+
+.nav-menu a:hover {
 
     color: var(--primary-color);
+
+}
+
+/* Active */
+
+.nav-menu a.active {
+
+    color: var(--primary-color);
+
+}
+
+/* Underline Animation */
+
+.nav-menu a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -6px;
+
+    width: 0;
+
+    height: 2px;
+
+    background: var(--primary-color);
+
+    transition: var(--transition);
+
+}
+
+.nav-menu a:hover::after,
+.nav-menu a.active::after {
+
+    width: 100%;
+
+}
+
+/* Right */
+
+.header-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+/* Mobile Button */
+
+.menu-toggle {
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 46px;
+
+    height: 46px;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: 28px;
+
+    color: var(--secondary-color);
+
+}
+
+/* Desktop */
+
+.navbar {
+
+    display: block;
+
+}
+
+.menu-toggle {
+
+    display: none;
 
 }

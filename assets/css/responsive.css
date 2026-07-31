@@ -1,0 +1,53 @@
+/*
+=========================================
+COOLLAD Responsive Styles
+=========================================
+*/
+
+/* =====================================
+   Tablet & Mobile
+===================================== */
+
+@media screen and (max-width: 991px) {
+
+    /* Hide Desktop Navigation */
+
+    .navbar {
+        display: none;
+    }
+
+    /* Show Mobile Menu Button */
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Smaller Header */
+
+    .header-wrapper {
+        min-height: 80px;
+    }
+
+    /* Smaller Logo */
+
+    .logo img {
+        width: 150px;
+    }
+
+}
+
+/* =====================================
+   Mobile Devices
+===================================== */
+
+@media (max-width: 576px) {
+
+    .announcement-bar {
+        font-size: 12px;
+    }
+
+    .btn {
+        display: none;
+    }
+
+}
