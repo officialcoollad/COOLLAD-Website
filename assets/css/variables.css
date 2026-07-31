@@ -1,0 +1,134 @@
+/*
+=========================================
+COOLLAD Design System
+Version : 1.0
+Author  : COOLLAD
+=========================================
+*/
+
+:root {
+
+    /* =====================================
+       Brand Colors
+    ===================================== */
+
+    --primary-color: #0A5FFF;
+    --secondary-color: #062C5B;
+    --accent-color: #4DB6FF;
+
+    /* =====================================
+       Background Colors
+    ===================================== */
+
+    --white: #FFFFFF;
+    --light-bg: #F7FAFC;
+    --section-bg: #F1F5F9;
+    --dark-bg: #062C5B;
+
+    /* =====================================
+       Text Colors
+    ===================================== */
+
+    --text-dark: #1F2937;
+    --text-light: #6B7280;
+    --text-white: #FFFFFF;
+
+    /* =====================================
+       Border Colors
+    ===================================== */
+
+    --border-color: #E5E7EB;
+
+    /* =====================================
+       Success / Warning / Error
+    ===================================== */
+
+    --success-color: #22C55E;
+    --warning-color: #F59E0B;
+    --danger-color: #EF4444;
+
+    /* =====================================
+       Typography
+    ===================================== */
+
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Inter', sans-serif;
+
+    /* =====================================
+       Font Sizes
+    ===================================== */
+
+    --font-xs: 12px;
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-lg: 18px;
+    --font-xl: 22px;
+    --font-2xl: 30px;
+    --font-3xl: 40px;
+    --font-4xl: 52px;
+
+    /* =====================================
+       Font Weight
+    ===================================== */
+
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+    /* =====================================
+       Container
+    ===================================== */
+
+    --container-width: 1320px;
+
+    /* =====================================
+       Border Radius
+    ===================================== */
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-round: 50px;
+
+    /* =====================================
+       Shadows
+    ===================================== */
+
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+
+    --shadow-md: 0 6px 18px rgba(0,0,0,0.12);
+
+    --shadow-lg: 0 15px 35px rgba(0,0,0,0.15);
+
+    /* =====================================
+       Transition
+    ===================================== */
+
+    --transition: all 0.3s ease;
+
+    /* =====================================
+       Z Index
+    ===================================== */
+
+    --z-header: 999;
+    --z-menu: 1000;
+    --z-modal: 2000;
+    --z-loader: 3000;
+
+    /* =====================================
+       Spacing System (8px)
+    ===================================== */
+
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+    --space-5: 48px;
+    --space-6: 64px;
+    --space-7: 80px;
+    --space-8: 96px;
+
+}
