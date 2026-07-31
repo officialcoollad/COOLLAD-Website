@@ -4,220 +4,269 @@ COOLLAD Header
 =========================================
 */
 
-/* Announcement Bar */
+/* ==========================
+Announcement Bar
+========================== */
 
-.announcement-bar {
+.announcement-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
 
-    background: var(--secondary-color);
-    color: var(--text-white);
-    padding: 10px 0;
-    font-size: var(--font-sm);
+    background:#12386b;
+    color:#fff;
+
+    padding:8px 0;
+    font-size:14px;
+}
+
+.announcement-bar p{
+    margin:0;
+    text-align:center;
+    font-weight:500;
+}
+
+
+/* ==========================
+Main Header
+========================== */
+
+.main-header{
+
+    position:fixed;
+    top:36px;
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    background:#080d18;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
 
 }
 
-.announcement-bar p {
+/* ==========================
+Layout
+========================== */
 
-    margin: 0;
-    text-align: center;
-    color: var(--white);
+.header-wrapper{
 
-}
+    display:flex;
 
-/* Header */
+    align-items:center;
 
-.main-header {
+    justify-content:space-between;
 
-    position: sticky;
-    top: 0;
-
-    width: 100%;
-
-    background: var(--white);
-
-    z-index: var(--z-header);
-
-    box-shadow: var(--shadow-sm);
+    height:78px;
 
 }
 
-/* Layout */
 
-.header-wrapper {
+/* ==========================
+Logo
+========================== */
 
-    display: flex;
+.logo{
 
-    align-items: center;
+    display:flex;
 
-    justify-content: space-between;
+    align-items:center;
 
-    min-height: 90px;
+    text-decoration:none;
 
-}
+    padding:0;
 
-/* Logo */
+    margin:0;
 
-.logo img {
+    background:transparent;
 
-    width: 180px;
+    border:none;
 
-}
-
-/* Navigation */
-
-.nav-menu {
-
-    display: flex;
-
-    gap: 34px;
+    box-shadow:none;
 
 }
 
-.nav-menu a {
+.logo img{
 
-    position: relative;
+    display:block;
 
-    color: var(--text-dark);
+    width:230px;
 
-    font-weight: var(--weight-medium);
+    height:auto;
 
-    transition: var(--transition);
+    background:transparent;
 
-}
-
-/* Hover */
-
-.nav-menu a:hover {
-
-    color: var(--primary-color);
+    border:none;
 
 }
 
-/* Active */
 
-.nav-menu a.active {
+/* ==========================
+Navigation
+========================== */
 
-    color: var(--primary-color);
+.navbar{
+
+    display:block;
 
 }
 
-/* Underline Animation */
+.nav-menu{
 
-.nav-menu a::after {
+    display:flex;
 
-    content: "";
+    align-items:center;
 
-    position: absolute;
+    gap:40px;
 
-    left: 0;
+    list-style:none;
 
-    bottom: -6px;
+    margin:0;
 
-    width: 0;
+    padding:0;
 
-    height: 2px;
+}
 
-    background: var(--primary-color);
+.nav-menu li{
 
-    transition: var(--transition);
+    list-style:none;
+
+}
+
+.nav-menu a{
+
+    position:relative;
+
+    text-decoration:none;
+
+    color:#ffffff;
+
+    font-size:17px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-menu a:hover{
+
+    color:#3b8cff;
+
+}
+
+.nav-menu a.active{
+
+    color:#3b8cff;
+
+}
+
+/* Underline */
+
+.nav-menu a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#3b8cff;
+
+    transition:.35s;
 
 }
 
 .nav-menu a:hover::after,
-.nav-menu a.active::after {
 
-    width: 100%;
+.nav-menu a.active::after{
 
-}
-
-/* Right */
-
-.header-right {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 18px;
+    width:100%;
 
 }
 
-/* Mobile Button */
 
-.menu-toggle {
+/* ==========================
+Right
+========================== */
 
-    display: none;
+.header-right{
 
-    align-items: center;
+    display:flex;
 
-    justify-content: center;
+    align-items:center;
 
-    width: 46px;
-
-    height: 46px;
-
-    border: none;
-
-    background: transparent;
-
-    cursor: pointer;
-
-    font-size: 28px;
-
-    color: var(--secondary-color);
+    gap:20px;
 
 }
 
-/* Desktop */
 
-.navbar {
+/* ==========================
+Button
+========================== */
 
-    display: block;
+.header-right .btn{
 
-}
+    padding:14px 32px;
 
-/* =========================================
-Hamburger
-========================================= */
-
-.menu-toggle {
-
-    display: none;
-
-    width: 42px;
-
-    height: 42px;
-
-    border: none;
-
-    background: transparent;
-
-    cursor: pointer;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    gap: 6px;
+    border-radius:14px;
 
 }
 
-.menu-toggle span {
 
-    width: 28px;
+/* ==========================
+Mobile Button
+========================== */
 
-    height: 3px;
+.menu-toggle{
 
-    background: var(--secondary-color);
+    display:none;
 
-    transition: .3s ease;
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    background:transparent;
+
+    cursor:pointer;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:6px;
 
 }
 
-/* Active Animation */
+.menu-toggle span{
+
+    width:28px;
+
+    height:3px;
+
+    background:#ffffff;
+
+    transition:.3s;
+
+}
 
 .menu-toggle.active span:nth-child(1){
 
-    transform: rotate(45deg) translate(6px,6px);
+    transform:rotate(45deg) translate(6px,6px);
 
 }
 
@@ -229,6 +278,6 @@ Hamburger
 
 .menu-toggle.active span:nth-child(3){
 
-    transform: rotate(-45deg) translate(7px,-7px);
+    transform:rotate(-45deg) translate(7px,-7px);
 
 }
