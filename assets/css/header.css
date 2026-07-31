@@ -1,0 +1,99 @@
+/*
+=========================================
+Header
+=========================================
+*/
+
+/* Announcement Bar */
+
+.announcement-bar {
+
+    background: var(--secondary-color);
+
+    color: var(--text-white);
+
+    padding: 10px 0;
+
+    font-size: var(--font-sm);
+
+}
+
+.announcement-bar p {
+
+    margin: 0;
+
+    text-align: center;
+
+}
+
+
+
+/* Header */
+
+.main-header {
+
+    background: var(--white);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: var(--z-header);
+
+    box-shadow: var(--shadow-sm);
+
+}
+
+
+
+/* Wrapper */
+
+.header-wrapper {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    min-height: 85px;
+
+}
+
+
+
+/* Logo */
+
+.logo img {
+
+    width: 180px;
+
+}
+
+
+
+/* Navigation */
+
+.navbar ul {
+
+    display: flex;
+
+    gap: 35px;
+
+}
+
+.navbar a {
+
+    color: var(--text-dark);
+
+    font-weight: var(--weight-medium);
+
+    transition: var(--transition);
+
+}
+
+.navbar a:hover {
+
+    color: var(--primary-color);
+
+}
