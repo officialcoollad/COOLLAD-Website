@@ -1,29 +1,25 @@
 const menuBtn = document.getElementById("menu-toggle");
-
 const navbar = document.getElementById("navbar");
-
 const overlay = document.getElementById("menu-overlay");
 
-menuBtn.addEventListener("click", () => {
+if (menuBtn && navbar && overlay) {
 
-    menuBtn.classList.toggle("active");
+    menuBtn.addEventListener("click", () => {
 
-    navbar.classList.toggle("active");
+        menuBtn.classList.toggle("active");
+        navbar.classList.toggle("active");
+        overlay.classList.toggle("active");
+        document.body.classList.toggle("menu-open");
 
-    overlay.classList.toggle("active");
+    });
 
-    document.body.classList.toggle("menu-open");
+    overlay.addEventListener("click", () => {
 
-});
+        menuBtn.classList.remove("active");
+        navbar.classList.remove("active");
+        overlay.classList.remove("active");
+        document.body.classList.remove("menu-open");
 
-overlay.addEventListener("click", () => {
+    });
 
-    menuBtn.classList.remove("active");
-
-    navbar.classList.remove("active");
-
-    overlay.classList.remove("active");
-
-    document.body.classList.remove("menu-open");
-
-});
+}
