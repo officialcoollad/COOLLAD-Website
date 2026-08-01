@@ -436,3 +436,33 @@ padding:30px;
 }
 
 }
+
+/* Footer */
+
+@media(max-width:768px){
+
+.footer-links{
+
+flex-direction:column;
+
+gap:18px;
+
+}
+
+.footer-policy{
+
+flex-direction:column;
+
+gap:10px;
+
+}
+
+.footer-bottom{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+}
